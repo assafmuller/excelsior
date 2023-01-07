@@ -1,0 +1,3 @@
+pandas
+yahoo_fin
+matplotlib
