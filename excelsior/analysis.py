@@ -90,7 +90,7 @@ def get_polyfit(stock, degree):
     if np.isnan(R2) or np.isnan(p[0]):
         return
 
-    return (R2, p[0], y[-1] / y[0])
+    return (R2, y[-1] / y[0])
 
 
 def get_polyfits(stocks, degree):
@@ -115,11 +115,13 @@ def main():
     poly_fits = get_polyfits(stocks, 2)
 
     print('LINEAR FITS...')
+    print('Ticker, Fit (R Squared), Growth')
     for v in linear_fits[0:args.results]:
         print(v)
 
     print()
     print('POLY FITS...')
+    print('Ticker, Fit (R Squared), Growth')
     for v in poly_fits[0:args.results]:
         print(v)
 
