@@ -2,7 +2,6 @@ import argparse
 import json
 
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 parser = argparse.ArgumentParser(prog = 'Excelsior')
